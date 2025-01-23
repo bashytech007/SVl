@@ -1,4 +1,4 @@
-import React from 'react'
+
 import services from "../assets/services.jpg"
 const Services = () => {
   return (
