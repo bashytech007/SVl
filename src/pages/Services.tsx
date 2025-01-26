@@ -3,7 +3,7 @@ import services from "../assets/services.jpg"
 const Services = () => {
   return (
    <div>
-     <div className='mx-auto mb-4 mt-4'>
+       <div className='mx-auto mb-4 mt-4'>
       <h2 className='uppercase font-semibold text-transparent bg-clip-text  bg-gradient-to-r from-[#541B9C] to-[#FB060B80] text-center md:text-3xl text-base'>Services</h2>
     </div>
     {/* <div className='w-full md:px-32 px-6 mb-4'>
@@ -12,7 +12,7 @@ const Services = () => {
  <div className="relative w-full md:px-32 px-6 mb-4">
   <div className="relative">
     <img
-      className="w-full object-cover"
+      className="w-full object-cover md:h-96 h-48"
       src={services}
       alt="Services"
     />

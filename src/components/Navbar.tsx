@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export const Navbar = () => {
   return (
-    <div className="bg-[#FEFEFE] text-sm px-4 md:px-28">
+    <div className="bg-[#FEFEFE] text-sm px-4 md:px-28 py-2">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         <div className="cursor-pointer">
           <img src={logo} className="w-24 md:w-28" alt="SVL Logo"/>
