@@ -1,11 +1,13 @@
-import { Hero } from "../components/Hero";
+import { Contact } from "../components/Contact";
+import Hero from "../components/Hero";
 const Home = () => {
-    return (
-      <div>
-        <Hero />
-        {/* Other home page content */}
-      </div>
-    );
-  };
+  return (
+    <div>
+      <Hero />
+      <Contact />
+      {/* Other home page content */}
+    </div>
+  );
+};
 
-  export default Home
+export default Home;
