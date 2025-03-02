@@ -1,21 +1,25 @@
+import HeroImg from "../assets/svl-hero-img.png";
 
-
-
-export const Hero = () => {
+export default function Hero() {
   return (
-    <main className="bg-image text-white bg-gradient-to-r min-h-80 from-[#541B9C80] via-[#541B9C80] to-[#FB060B40] max-w-full flex flex-col items-center mt-4 space-x-1 justify-center">
-      <h2 className="font-bold md:font-semibold mt-8 text-2xl md:text-4xl mb-4">
-        Let's shape your path to success
-      </h2>
-      <div className="mt-2 font-light md:font-normal text-sm md:text-xl">
-        <p className="">Discover your tailored solutions and expert guidance</p>
-        <p className="flex justify-center">Get in Touch with us today</p>
-      </div>
-      <div className="mt-5 mb-5">
-        <button className="outline-white px-12 py-2 border-2 rounded-full">
-          Contact US
+    <section className="flex gap-6 flex-1 justify-center items-center flex-col md:flex-row mt-5">
+      <aside className="max-w-[50%]">
+        <h2 className="font-bold text-4xl">
+          <span className="bg-gradient-to-r from-[#541B9C] to-[#FB060B80] text-transparent bg-clip-text">
+            EXPERT GUIDANCE
+          </span>{" "}
+          FOR LASTING IMPACT
+        </h2>
+        <p className="leading-7">
+          Driving Excellence in Governance, Risk Management, Compliance (GRC),
+          and Behavioral Skills Development for Banks, Financial Institutions,
+          and MSMEs.
+        </p>
+        <button className="rounded-full py-4 px-10  mt-10 uppercase text-white bg-gradient-to-r from-[#541B9C] to-[#FB060B80] ">
+          Get Started
         </button>
-      </div>
-    </main>
+      </aside>
+      <img src={HeroImg} alt="svl group" className="max-w-[50%]" />
+    </section>
   );
-};
+}
