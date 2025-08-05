@@ -16,11 +16,13 @@ export default {
     extend: {
       colors: {
         dark_purple: "#541B9C",
-        light_purple: "#FB060B80",
+        light_purple: "#fb060abd",
+        "svl-gradient":
+          "bg-gradient-to-r from-[#541B9C] to-[#fb060abd] text-transparent",
       },
       backgroundImage: {
-        herobg: "linear-gradient(90deg, #541B9C80, #FB060B40)",
-        "svl-gradient": "linear-gradient(90deg, #541B9C, #FB060B80)",
+        hebg: "linear-gradient(90deg, #541B9C80, #FB060B40)",
+        "svl-gradient": "linear-gradient(90deg, #541B9C, #fb060abd)",
       },
     },
   },

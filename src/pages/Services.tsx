@@ -1,27 +1,28 @@
-
-import services from "../assets/services.jpg"
+import services from "../assets/services.jpg";
 const Services = () => {
   return (
-   <div>
-       <div className='mx-auto mb-4 mt-4'>
-      <h2 className='uppercase font-semibold text-transparent bg-clip-text  bg-gradient-to-r from-[#541B9C] to-[#FB060B80] text-center md:text-3xl text-base'>Services</h2>
-    </div>
-    {/* <div className='w-full md:px-32 px-6 mb-4'>
-      <img className='bg-linear-to-r  from-[#541B9C] to-[#FB060B80]' src={services}/>
+    <div>
+      <div className="mx-auto mb-4 mt-4">
+        <h2 className="uppercase font-semibold text-transparent bg-clip-text  bg-gradient-to-r from-[#541B9C] to-[#fb060abd] text-center md:text-3xl text-base">
+          Services
+        </h2>
+      </div>
+      {/* <div className='w-full md:px-32 px-6 mb-4'>
+      <img className='bg-linear-to-r  from-[#541B9C] to-[#fb060abd]' src={services}/>
     </div> */}
- <div className="relative w-full md:px-32 px-6 mb-4">
-  <div className="relative">
-    <img
-      className="w-full object-cover md:h-96 h-48"
-      src={services}
-      alt="Services"
-    />
-    <div className="absolute inset-0 bg-gradient-to-r from-[#541B9C] to-[#FB060B80] opacity-50"></div>
-  </div>
-</div>
- {/* Heading Section */}
- <div className="mx-auto mb-4 mt-4">
-        <h2 className="uppercase font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#541B9C] to-[#FB060B80] text-center md:text-3xl text-base">
+      <div className="relative w-full md:px-32 px-6 mb-4">
+        <div className="relative">
+          <img
+            className="w-full object-cover md:h-96 h-48"
+            src={services}
+            alt="Services"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#541B9C] to-[#fb060abd] opacity-50"></div>
+        </div>
+      </div>
+      {/* Heading Section */}
+      <div className="mx-auto mb-4 mt-4">
+        <h2 className="uppercase font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#541B9C] to-[#fb060abd] text-center md:text-3xl text-base">
           Consulting Services at SVL Consulting
         </h2>
       </div>
@@ -67,7 +68,9 @@ const Services = () => {
 
       {/* Training Delivery Options Section */}
       <div className="md:px-32 px-6 mb-8">
-        <h3 className="text-center text-xl font-bold mb-6">Training Delivery Options</h3>
+        <h3 className="text-center text-xl font-bold mb-6">
+          Training Delivery Options
+        </h3>
         <p className="text-gray-700 mb-4 text-center">
           We offer flexible training delivery to meet your needs:
         </p>
@@ -79,8 +82,8 @@ const Services = () => {
           <div className="flex-1  p-6 ">
             <ul className="list-disc list-inside text-gray-600">
               <li>
-                <strong>In-Plant/In-House Training</strong> – Customized training
-                delivered at your preferred location.
+                <strong>In-Plant/In-House Training</strong> – Customized
+                training delivered at your preferred location.
               </li>
               <li>
                 <strong>Open Seminars/Public Courses</strong> – Join our public
