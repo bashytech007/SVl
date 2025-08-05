@@ -6,7 +6,7 @@ const WhatWeOffer = () => {
   return (
     <Container>
       <section className="w-full bg-[#fefefe] relative">
-        <div>
+        <div className="max-w-full">
           <img
             src={EllipseBg}
             alt="ellipse"
