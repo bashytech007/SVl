@@ -3,7 +3,7 @@ import Container from "./Container";
 const WhoWeAre = () => {
   return (
     <Container>
-      <section className="bg-[url('public/who_we_are.png')] w-full lg:min-h-[500px] min-h-fit relative bg-top bg-cover text-[#fff] ">
+      <section className="bg-[url('/who_we_are.png')] w-full lg:min-h-[500px] min-h-fit relative bg-top bg-cover text-[#fff] ">
         <div className="bg-black/50 backdrop-brightness-100 absolute inset-0 pointer-events-none mx-auto z-1"></div>
         <div className="lg:w-[80%] w-full mx-auto flex flex-col z-10 relative">
           <div className="pt-24 mx-auto">
@@ -20,7 +20,10 @@ const WhoWeAre = () => {
             (GRC), and behavioral skills development, we don’t just solve
             problems—we pave the way for future success.
           </p>
-          <button className="mx-auto my-10 text-center rounded-full px-12 py-2 bg-gradient-to-r from-[#551b9c] to-[#fb060abd] ">
+          <button
+            type="button"
+            className="mx-auto my-10 text-center rounded-full px-12 py-2 bg-gradient-to-r from-[#551b9c] to-[#fb060abd] "
+          >
             READ MORE
           </button>
         </div>
