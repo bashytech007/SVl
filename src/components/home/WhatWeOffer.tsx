@@ -1,12 +1,12 @@
-import ArrowRight from "../assets/arrow_right.png";
-import EllipseBg from "../assets/ellipses.png";
-import Container from "./Container";
+import ArrowRight from "../../assets/arrow_right.png";
+import EllipseBg from "../../assets/ellipses.png";
+import Container from "../Container";
 
 const WhatWeOffer = () => {
   return (
     <Container>
       <section className="w-full bg-[#fefefe] relative">
-        <div className="max-w-full">
+        <div>
           <img
             src={EllipseBg}
             alt="ellipse"
@@ -30,7 +30,7 @@ const WhatWeOffer = () => {
           <img
             src={EllipseBg}
             alt="ellipse"
-            className="w-[800px] absolute pointer-events-none right-[10%] top-[-25%]"
+            className="w-[800px] absolute pointer-events-none right-[10%] top-[35%]"
           />
           <img
             src={EllipseBg}
@@ -40,7 +40,7 @@ const WhatWeOffer = () => {
         </div>
         <div className="lg:w-[90%] w-full mx-auto flex flex-col z-10 relative">
           <div className="pt-24">
-            <h2 className="font-semibold text-3xl tracking-wider">
+            <h2 className="font-semibold text-xl md:text-3xl tracking-wider">
               WHAT WE OFFER
             </h2>
             <span className="block justify-self-start bg-herobg z-10 w-[120px] h-[5px]"></span>
@@ -52,11 +52,11 @@ const WhatWeOffer = () => {
             areas of Governance, Risk Management, Compliance (GRC), and
             Behavioral Skills.
           </p>
-          <div className="flex w-full gap-10 mx-5 max-w-full flex-col lg:flex-row">
-            <aside className="w-full lg:w-[75%]">
-              <div className="bg-[#ffffff4f] px-16 py-5 rounded-lg">
+          <div className="flex w-full gap-10 md:mx-5 mb-10 max-w-full flex-col lg:flex-row">
+            <aside className="min-w-max lg:w-[100%]">
+              <div className="bg-[#ffffff4f] px-2 md:px-10 py-4 md:py-10 rounded-lg">
                 <h4>Training Services</h4>
-                <ul className="list-disc ml-10">
+                <ul className="list-disc ml-7 md:ml-10">
                   <li>Accounting & Finance</li>
                   <li>Governance & Risk Management</li>
                   <li>Banking Operations</li>
@@ -66,36 +66,37 @@ const WhatWeOffer = () => {
                 </ul>
                 <a
                   href="#"
-                  className="underline uppercase flex items-center gap-2 text-sm"
+                  className="underline uppercase flex items-center gap-2 text-sm mt-5 text-[#F07480]"
                 >
                   <span>learn more</span>
                   <img src={ArrowRight} alt="arrow right" />
                 </a>
               </div>
             </aside>
-            <aside className="">
-              <div className="bg-[#ffffff4f] w-fit px-16 py-5 rounded-lg">
+            <aside className="w-full">
+              <div className="bg-[#ffffff4f] w-fit px-2 py-4 md:px-10 md:py-10 rounded-lg">
                 <h4>Consulting Services</h4>
-                <ul className="list-disc ml-10">
+                <ul className="list-disc ml-7 md:ml-10">
                   <li>
-                    <h5>Strategic Business Consulting</h5> – Tailored solutions
-                    that address your most pressing business challenges.
+                    <h5 className="font-">Strategic Business Consulting</h5> –
+                    Tailored solutions that address your most pressing business
+                    challenges.
                   </li>
                   <li>
-                    <h5>Post-Training Support</h5> – Hands-on guidance to
-                    implement the skills learned in training for long-term
-                    success.
+                    <h5 className="font-">Post-Training Support</h5> – Hands-on
+                    guidance to implement the skills learned in training for
+                    long-term success.
                   </li>
                   <li>
-                    <h5>Custom Programs</h5> – Specialist teams to provide
-                    personalized and enduring solutions.
+                    <h5 className="font-">Custom Programs</h5> – Specialist
+                    teams to provide personalized and enduring solutions.
                   </li>
                 </ul>
                 <a
                   href="#"
-                  className="underline uppercase flex items-center gap-2 text-sm"
+                  className="underline uppercase flex items-center gap-2 mt-5 text-sm text-[#F07480]"
                 >
-                  <span>explore</span>{" "}
+                  <span>explore</span>
                   <img src={ArrowRight} alt="arrow right" />
                 </a>
               </div>

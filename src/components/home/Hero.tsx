@@ -1,5 +1,6 @@
-import HeroImg from "../assets/svl-hero-img.png";
-import Container from "./Container";
+import HeroImg from "../../assets/svl-hero-img.png";
+import Button from "../../ui/Button";
+import Container from "../Container";
 
 export default function Hero() {
   return (
@@ -17,9 +18,7 @@ export default function Hero() {
             and Behavioral Skills Development for Banks, Financial Institutions,
             and MSMEs.
           </p>
-          <button className="rounded-full py-4 px-10  mt-10 uppercase text-white bg-gradient-to-r from-[#541B9C] to-[#fb060abd] ">
-            Get Started
-          </button>
+          <Button text="Get Started" className="text-white" />
         </aside>
         <img src={HeroImg} alt="svl group" className="md:max-w-[50%] w-[60%]" />
       </>

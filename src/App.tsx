@@ -1,8 +1,8 @@
 // App.tsx
-import './App.css'
+import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import "./App.css";
 import { Layout } from "./components/Layout";
-import React from 'react';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +24,11 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         Component: React.lazy(() => import("./pages/ContactUs")),
-      }
+      },
+      {
+        path: "*",
+        Component: React.lazy(() => import("./pages/NotFound")),
+      },
     ],
   },
 ]);

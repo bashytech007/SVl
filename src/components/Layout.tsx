@@ -7,7 +7,7 @@ export const Layout = () => {
   return (
     <ScrollToTop>
       <div className="flex flex-col min-h-dvh min-w-[320px]">
-        <div className="max-w-7xl mx-auto w-full px-8 md:px-28">
+        <div className="max-w-[1700px] mx-auto w-full px-4 md:px-28">
           <Navbar />
           <main>
             <Outlet />
