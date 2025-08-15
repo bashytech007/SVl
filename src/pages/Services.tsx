@@ -1,11 +1,6 @@
-import account from "../assets/account.jpg";
-import banking from "../assets/banking-woman.png";
 import Collaboration from "../assets/collaboration.png";
 import GraphicalPresentation from "../assets/GraphicalPresentation.png";
-import grc from "../assets/grc.jpg";
 import InnovativeBox from "../assets/InnovativeBox.png";
-import audit from "../assets/internal-audit.png";
-import mmse from "../assets/mmse.png";
 import services from "../assets/services.jpg";
 import Overview from "../components/about/Overview";
 import { Contact } from "../components/Contact";
@@ -13,6 +8,7 @@ import Container from "../components/Container";
 import GradientContainer from "../components/GradientContainer";
 import GradientUnderlined from "../components/GradientUnderlined";
 import Programme from "../components/services/Programme";
+import { programs } from "../constants/programs";
 
 const Services = () => {
   return (
@@ -89,7 +85,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="mb-8">
+          <div>
             <GradientUnderlined text="Training programme at SVL consulting" />
             <p className="my-4">
               We offer comprehensive training solutions across key areas of
@@ -101,92 +97,17 @@ const Services = () => {
             <p className="mb-10">
               We offer flexible training delivery to meet your needs:
             </p>
-          </div>
 
-          <div>
-            <Programme title="Accounting and Finance" img={account}>
-              <>
-                <li>Accounting for Non-Financial Managers</li>
-                <li>Personal Financial Management</li>
-                <li>Cash Flow Management</li>
-                <li>And more...</li>
-              </>
-            </Programme>
-
-            <Programme
-              title="Governance, Risk Management & Compliance (GRC)"
-              img={grc}
-              reverseRow
-            >
-              <>
-                <li>
-                  Corporate Governance & Risk Management– Build a strong,
-                  compliant corporate governance framework.
-                </li>
-                <li>
-                  Enterprise Risk Management (ERM) – Learn how to capture
-                  opportunities while managing risks.
-                </li>
-                <li>
-                  Business Process Improvement– Improve operational efficiency
-                  through structured processes.
-                </li>
-                <li>And more...</li>
-              </>
-            </Programme>
-
-            <Programme title="Banking Operations & Management" img={banking}>
-              <>
-                <li>
-                  Customer Relationship Management (CRM)– Optimize client
-                  relationships to drive profitability.
-                </li>
-                <li>
-                  Credit Risk Management – Reduce exposure and manage credit
-                  risk effectively.
-                </li>
-                <li>
-                  Operational Risk Management in Retail Banking– Strengthen
-                  operational resilience in retail banking.
-                </li>
-                <li>And more...</li>
-              </>
-            </Programme>
-            <Programme title="Internal Auditing" img={audit} reverseRow>
-              <>
-                <li>
-                  Cyber Risk Management Audit– Ensure robust defense against
-                  cybersecurity threats.
-                </li>
-                <li>
-                  Strategic Auditing – Transition from compliance-focused to
-                  strategy-driven auditing.
-                </li>
-                <li>
-                  Forensic Auditing and Investigations– Detect and prevent fraud
-                  within your organization.
-                </li>
-                <li>And more...</li>
-              </>
-            </Programme>
-
-            <Programme title="MSMEs Development" img={mmse}>
-              <>
-                <li>
-                  Preparing a Business Plan– Craft a winning business plan that
-                  attracts investors.
-                </li>
-                <li>
-                  Valuation of Small Businesses – Learn how to accurately value
-                  your small business.
-                </li>
-                <li>
-                  Accessing Venture Capital– Unlock the secrets to securing
-                  venture capital funding.
-                </li>
-                <li>And more...</li>
-              </>
-            </Programme>
+            {programs.map(({ title, img, content }, idx) => (
+              <Programme
+                key={idx}
+                reverseRow={!!(idx % 2)}
+                title={title}
+                img={img}
+              >
+                {content}
+              </Programme>
+            ))}
           </div>
           <Contact />
         </div>
