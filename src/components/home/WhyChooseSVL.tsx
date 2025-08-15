@@ -1,18 +1,14 @@
 import handshake from "../../assets/handshake.png";
 import Container from "../Container";
 import GradientContainer from "../GradientContainer";
+import GradientUnderlined from "../GradientUnderlined";
 
 const WhyChooseSVL = () => {
   return (
     <Container>
       <GradientContainer>
         <div className="lg:w-[90%] w-full mx-auto flex flex-col z-10 relative">
-          <div className="pt-24">
-            <h2 className="font-semibold text-xl md:text-3xl tracking-wider">
-              WHY CHOOSE SVL CONSULTING
-            </h2>
-            <span className="block justify-self-start bg-herobg z-10 w-[120px] h-[5px]"></span>
-          </div>
+          <GradientUnderlined text="Why choose SVL consulting" />
           <section className="py-16">
             <div className="grid grid-cols-[1fr_auto_1fr] grid-rows-[auto_auto_auto] md:gap-x-6 md:gap-y-4 items-center justify-items-center max-w-4xl mx-auto">
               {/* Top Left */}

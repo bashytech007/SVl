@@ -77,7 +77,7 @@ const AboutUs = () => {
               {/* Left Content */}
               <div className="space-y-4 md:mb-40">
                 <aside>
-                  <h2 className="font-semibold text-xl md:text-3xl tracking-wider uppercase">
+                  <h2 className="font-semibold text-xl md:text-3xl tracking-wider uppercase min-w-max">
                     Key Highlight
                   </h2>
                   <span className="block justify-self-start bg-herobg z-10 w-[120px] h-[5px]"></span>

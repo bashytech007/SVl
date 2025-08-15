@@ -1,6 +1,7 @@
 import ArrowRight from "../../assets/arrow_right.png";
 import EllipseBg from "../../assets/ellipses.png";
 import Container from "../Container";
+import GradientUnderlined from "../GradientUnderlined";
 
 const WhatWeOffer = () => {
   return (
@@ -39,12 +40,7 @@ const WhatWeOffer = () => {
           />
         </div>
         <div className="lg:w-[90%] w-full mx-auto flex flex-col z-10 relative">
-          <div className="pt-24">
-            <h2 className="font-semibold text-xl md:text-3xl tracking-wider">
-              WHAT WE OFFER
-            </h2>
-            <span className="block justify-self-start bg-herobg z-10 w-[120px] h-[5px]"></span>
-          </div>
+          <GradientUnderlined text="What we Offer" />
           <p className="py-6">
             At SVL Consulting, we specialize in transforming organizations
             through expert-led Training and Consulting Services. Our services
