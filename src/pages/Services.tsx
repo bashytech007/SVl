@@ -42,7 +42,7 @@ const Services = () => {
 
           <div className="mb-8">
             <h3 className="text-2xl mb-6 tracking-wide">Our Approach:</h3>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6">
               <aside className="p-6 rounded-lg shadow-sm">
                 <img
                   className="mb-4 shadow-sm px-4 py-2"
