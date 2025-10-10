@@ -1,6 +1,8 @@
 import EllipseBg from "../assets/ellipses.png";
 
-const GradientContainer = ({ children }: { children: React.ReactElement }) => {
+const GradientContainer: React.FC<{
+  children: React.ReactElement | React.ReactElement[];
+}> = ({ children }) => {
   return (
     <section className="w-full bg-[#fefefe] relative">
       <div>

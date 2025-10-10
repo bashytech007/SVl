@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* 
 .bg-image {
   background-image: url("./assets/OrientalTilesPattern.svg"); 
@@ -14,12 +13,22 @@
 } */
 
 .bg-image {
-  background-image: 
-    linear-gradient(to right, rgba(84, 27, 156, 0.5), rgba(84, 27, 156, 0.5), rgba(251, 6, 11, 0.25)),
+  background-image: linear-gradient(
+      to right,
+      rgba(84, 27, 156, 0.5),
+      rgba(84, 27, 156, 0.5),
+      rgba(251, 6, 11, 0.25)
+    ),
     url("./assets/OrientalTilesPattern.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   width: 100%;
   display: hidden;
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }

@@ -7,7 +7,7 @@ import msme from "../assets/mmse.png";
 type programType = {
   title: string;
   img: string;
-  content: React.ReactElement;
+  content: React.ReactElement | React.ReactElement[];
 };
 
 export const programs: programType[] = [

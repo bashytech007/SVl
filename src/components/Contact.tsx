@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import Container from "./Container";
 
 export const Contact = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <section className="bg-image text-white bg-gradient-to-r min-h-80 from-[#541B9C80] via-[#541B9C80] to-[#FB060B40] max-w-full flex flex-col items-center space-x-1 justify-center px-5 md:px-10 lg:px-20">
@@ -14,7 +16,10 @@ export const Contact = () => {
           <p className="flex justify-center">Get in Touch with us today</p>
         </div>
         <div className="mt-5 mb-5">
-          <button className="outline-white px-12 py-2 border-2 rounded-full">
+          <button
+            className="outline-white px-12 py-2 border-2 rounded-full"
+            onClick={() => navigate("/contact-us")}
+          >
             Contact US
           </button>
         </div>

@@ -1,16 +1,11 @@
 import { cn } from "../../utils/cn";
 
-const Programme = ({
-  img,
-  title,
-  children,
-  reverseRow = false,
-}: {
+const Programme: React.FC<{
   img: string;
   title: string;
-  children: React.ReactElement;
+  children: React.ReactElement | React.ReactElement[];
   reverseRow?: boolean;
-}) => {
+}> = ({ img, title, children, reverseRow = false }) => {
   return (
     <div className="max-w-full mb-6 md:mb-10">
       <h3 className="md:text-xl font-semibold mb-3 md:mb-6 text-center md:text-left">

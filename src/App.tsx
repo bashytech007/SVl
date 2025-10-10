@@ -1,13 +1,21 @@
 // App.tsx
 import React from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import { Layout } from "./components/Layout";
+import RestrictPages from "./components/RestrictPages";
+import { AuthProvider } from "./context/AuthProvider";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <HelmetProvider>
+        <Layout />
+      </HelmetProvider>
+    ),
     children: [
       {
         path: "/",
@@ -31,10 +39,43 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/admin",
+    element: (
+      <AuthProvider>
+        <RestrictPages />,
+      </AuthProvider>
+    ),
+    children: [
+      {
+        path: "mail",
+        Component: React.lazy(() => import("./pages/MailSystem")),
+      },
+    ],
+  },
+  {
+    path: "/admin/auth",
+    element: (
+      <AuthProvider>
+        <RestrictPages requireAuth={false} />
+      </AuthProvider>
+    ),
+    children: [
+      {
+        path: "login",
+        Component: React.lazy(() => import("./auth/Login")),
+      },
+    ],
+  },
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+      <ToastContainer />
+    </>
+  );
 }
 
 export default App;
